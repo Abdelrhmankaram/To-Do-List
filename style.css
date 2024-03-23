@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+    background-color: #384150;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+    margin: 0 20% 0 20%;
+}
+
+.container > .task-form > h1,
+.container > .tasks-list > h2{
+    color: #656d7f;
+    text-align: left;
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding: 20px 0 10px 0;
+    cursor: default
+}
+
+.container > .task-form > h1:hover,
+.container > .tasks-list > h2:hover{
+    color: white;
+}
+
+.container > .task-form > .task-input{
+    display: flex;
+}
+
+.container > .task-form > .task-input > input{
+    background-color: #262c36;
+    width: 80%;
+    height: 50px;
+    color: #656d7f;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+.container > .task-form > .task-input > input{
+    color: #546076;
+    font-size: 1.1rem;
+    padding: 0 0 0 20px;
+    font-weight: bold;
+}
+
+.container > .task-form > .task-input > input::placeholder{
+    color: #546076;
+    font-weight: bold;
+}
+
+.container > .task-form > .task-input > button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(180, 0, 180);
+}
+
+.container > .tasks-list > h2{
+    font-size: 1.8rem;
+}
+
+.container > .tasks-list > .tasks-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.container > .tasks-list> .list > .task{
+    background-color: #111825;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.container > .tasks-list> .list > .task:first-child{
+    margin: 0 0 15px 0;
+}
+
+.container > .tasks-list> .list > .task > input {
+    order: 1;
+    background: none;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: default;
+    padding: 20px;
+    width: 70%;
+}
+
+.container > .tasks-list> .list > .task > .task-btns {
+    order: 2;
+    padding-right: 12px;
+}
+
+.container > .tasks-list> .list > .task > .task-btns > button{
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.container > .tasks-list> .list > .task > .task-btns > #edit{
+    color: rgb(180, 0, 180);
+}
+
+.container > .tasks-list> .list > .task > .task-btns > #delete{
+    color: #83133c;
+}
+
+.container > .tasks-list> .list > .task > .task-btns > #save{
+    color: white;
+    display: none;
+}
